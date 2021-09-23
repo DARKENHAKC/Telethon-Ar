@@ -25,7 +25,7 @@ async def amireallyalive(alive):
         cat_caption += f"**{EMOJI} ❬ ٍَ أصدار النسخـة :  ِ2.0.0  ٍَ❭**\n"
         cat_caption += f"**{EMOJI}❬ ٰمـدة الـتشغيل  : {uptime}  ٍَ❭**\n"
         cat_caption += f"**{EMOJI} ❬ ِحسـابك  :   {mention}  ٍ**\n"
-        cat_caption += f"**{EMOJI} ❬ ٰقنـاة تليـثون  :** @M4_STORY  ٍَ❭\n"
+        cat_caption += f"**{EMOJI} ❬ ٰقنـاة تليـثون  :** @YZZZY  ٍَ❭\n"
         cat_caption += f"**{EMOJI} ❬ ٰمـطور السورس : ** @LLL5L ٍَ❭\n"
         cat_caption += f"———×"
         await alive.client.send_file(
