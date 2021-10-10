@@ -5,7 +5,7 @@ from telethon import version
 
 from . import ALIVE_NAME, StartTime, catversion, get_readable_time, mention, reply_id
 
-DEFAULTUSER = ALIVE_NAME or "I𝐐𝐓𝐇𝐎𝐍⁦♡⁩"
+DEFAULTUSER = ALIVE_NAME or ".riothon⁩"
 CAT_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/cd27beb82e7af1aff97d2.mp4"
 CUSTOM_ALIVE_TEXT = Config.CUSTOM_ALIVE_TEXT or "❬ تـليثون الأجنبي  - Telethon-English ، 🕸  ❭"
 EMOJI = Config.CUSTOM_ALIVE_EMOJI or " ٍَ 🖤"
@@ -22,11 +22,11 @@ async def amireallyalive(alive):
     if CAT_IMG:
         cat_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
         cat_caption += f"———×\n"
-        cat_caption += f"**{EMOJI} ❬ ٍَ أصدار النسخـة :  ِ2.0.0  ٍَ❭**\n"
+        cat_caption += f"**{EMOJI} ❬ ٍَ نسـخه داركثون :  ِ2.0.0  ٍَ❭**\n"
         cat_caption += f"**{EMOJI}❬ ٰمـدة الـتشغيل  : {uptime}  ٍَ❭**\n"
-        cat_caption += f"**{EMOJI} ❬ ِحسـابك  :   {mention}  ٍ**\n"
-        cat_caption += f"**{EMOJI} ❬ ٰقنـاة تليـثون  :** @YZZZY  ٍَ❭\n"
-        cat_caption += f"**{EMOJI} ❬ ٰمـطور السورس : ** @LLL5L ٍَ❭\n"
+        cat_caption += f"**{EMOJI} ❬ ِا :المالـك   {mention}  ٍ**\n"
+        cat_caption += f"**{EMOJI} ❬ ٰقنـاة تليـثون  :** @riothon  ٍَ❭\n"
+        cat_caption += f"**{EMOJI} ❬ ٰمـطور السورس : ** @VSDFM ٍَ❭\n"
         cat_caption += f"———×"
         await alive.client.send_file(
             alive.chat_id, CAT_IMG, caption=cat_caption, reply_to=reply_to_id
@@ -41,8 +41,8 @@ async def amireallyalive(alive):
         f"**{EMOJI}❬ ٰمـدة الـتشغيل  : {uptime}  ٍَ❭**\n"
         f"**{EMOJI} ❬ ِحسـابك  :   {mention}  ٍ**\n"
         f"**{EMOJI} ❬ ٰقنـاة تليـثون  :** @M4_STORY  ٍَ❭\n"
-        f"**{EMOJI} ❬ ٰمـطور السورس : ** @LLL5L ٍَ❭\n"
-        f"**{EMOJI} ❬ ٰمـطور السورس : ** @LLL5L ٍَ❭\n"
+        f"**{EMOJI} ❬ ٰمـطور السورس : ** @VSDFM ٍَ❭\n"
+        f"**{EMOJI} ❬ ٰمـطور السورس : ** @VSDFM ٍَ❭\n"
         f"———×\n"
         )
 
