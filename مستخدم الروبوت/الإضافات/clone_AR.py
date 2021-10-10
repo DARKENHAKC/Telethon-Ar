@@ -1,7 +1,7 @@
 """Get Telegram Profile Picture and other information
 and set as own profile.
 Syntax: .clone @username"""
-# Credits of Plugin @iqthon
+# Credits of Plugin @riothon
 
 import html
 
@@ -15,7 +15,7 @@ DEFAULTUSER = str(AUTONAME) if AUTONAME else str(ALIVE_NAME)
 DEFAULTUSERBIO = (
     str(DEFAULT_BIO)
     if DEFAULT_BIO
-    else "@IQTHoN˙"
+    else "@riothon˙"
 )
 
 
@@ -58,7 +58,7 @@ async def _(event):
     await event.client(functions.photos.UploadProfilePhotoRequest(pfile))
     await event.delete()
     await event.client.send_message(
-        event.chat_id, "**تـم انتـحال الضـحية 𖠕**", reply_to=reply_message
+        event.chat_id, "**تـم انتـحال الضـحية ⇜ ⌯**", reply_to=reply_message
     )
     if BOTLOG:
         await event.client.send_message(
@@ -83,7 +83,7 @@ async def _(event):
     await event.client(functions.account.UpdateProfileRequest(about=bio))
     await event.client(functions.account.UpdateProfileRequest(first_name=name))
     await event.client(functions.account.UpdateProfileRequest(last_name=blank))
-    await event.edit("𖠕 تم اعادة ضبط حسـابك بنجـاح")
+    await event.edit("⇜ ⌯ تم اعادة ضبط حسـابك بنجـاح")
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, f"#REVERT\nSuccesfully reverted back to your profile"
