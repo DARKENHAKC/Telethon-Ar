@@ -105,7 +105,7 @@ CMD_HELP.update(
     \n\n**Button post helper**\
     \n•  **Syntax : **`.cbutton`\
     \n•  **Function :** __For working of this you need your bot({BOT_USERNAME}) in the group/channel you are using and Buttons must be in the format as [Name on button]<buttonurl:link you want to open> and markdown is Default to html__\
-    \n•  **Example :** `.cbutton test [google]<buttonurl:https://www.google.com> [telethon]<buttonurl:https://t.me/iqthon:same> [file]<buttonurl:https://t.me/yzzzy>`\
+    \n•  **Example :** `.cbutton test [google]<buttonurl:https://www.google.com> [telethon]<buttonurl:https://t.me/iqthon:same> [file]<buttonurl:https://t.me/riothon>`\
     \n\n•  **Syntax : **`.ibutton`\
     \n•  **Function :** __Buttons must be in the format as [Name on button]<buttonurl:link you want to open>__\
     \n•  **Example :** `.ibutton test [google]<buttonurl:https://www.google.com> [telethon]<buttonurl:https://t.me/iqthon:same> [files]<buttonurl:https://t.me/eiothon>`\
