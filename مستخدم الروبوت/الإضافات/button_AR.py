@@ -82,7 +82,7 @@ async def _(event):
     else:
         markdown_note = "".join(event.text.split(maxsplit=1)[1:])
     if not markdown_note:
-        return await edit_delete(event, "`ما النص الذي يجب أن أستخدمه في زر آخر 𖠕`")
+        return await edit_delete(event, "`ما النص الذي يجب أن أستخدمه في زر آخر ⇜ ⌯")
     catinput = "Inline buttons " + markdown_note
     results = await event.client.inline_query(BOT_USERNAME, catinput)
     await results[0].click(event.chat_id, reply_to=reply_to_id, hide_via=True)
@@ -108,7 +108,7 @@ CMD_HELP.update(
     \n•  **Example :** `.cbutton test [google]<buttonurl:https://www.google.com> [telethon]<buttonurl:https://t.me/iqthon:same> [file]<buttonurl:https://t.me/yzzzy>`\
     \n\n•  **Syntax : **`.ibutton`\
     \n•  **Function :** __Buttons must be in the format as [Name on button]<buttonurl:link you want to open>__\
-    \n•  **Example :** `.ibutton test [google]<buttonurl:https://www.google.com> [telethon]<buttonurl:https://t.me/iqthon:same> [files]<buttonurl:https://t.me/yzzzy>`\
+    \n•  **Example :** `.ibutton test [google]<buttonurl:https://www.google.com> [telethon]<buttonurl:https://t.me/iqthon:same> [files]<buttonurl:https://t.me/eiothon>`\
     "
     }
 )
