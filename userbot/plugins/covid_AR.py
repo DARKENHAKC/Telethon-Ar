@@ -11,7 +11,7 @@ async def corona(event):
         country = (event.pattern_match.group(1)).title()
     else:
         country = "World"
-    catevent = await edit_or_reply(event, "`جـاري جلب معلـومات كـورنا عـن هذا البـلد 𖠕...`")
+    catevent = await edit_or_reply(event, "`جـاري جلب معلـومات كـورنا عـن هذا البـلد ⇜ ⌯...`")
     covid = Covid(source="worldometers")
     try:
         country_data = covid.get_status_by_country_name(country)
