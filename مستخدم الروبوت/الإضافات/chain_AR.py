@@ -1,4 +1,4 @@
-
+#DARKEN
 from telethon.tl.functions.messages import SaveDraftRequest
 
 
@@ -20,7 +20,7 @@ async def _(event):
             )
         message = reply
         count += 1
-    await event.edit(f" مـعلومـات هـية: {count} 𖠕")
+    await event.edit(f" مـعلومـات هـية: {count} ⇜ ⌯")
 
 
 CMD_HELP.update(
