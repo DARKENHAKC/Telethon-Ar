@@ -7,7 +7,7 @@ from telethon.tl.functions.messages import SaveDraftRequest
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit("جـاري كشـف معلومـات الـرسالة 𖠕...")
+    await event.edit("جـاري كشـف معلومـات الـرسالة ⇜ ⌯...")
     count = -1
     message = event.message
     while message:
