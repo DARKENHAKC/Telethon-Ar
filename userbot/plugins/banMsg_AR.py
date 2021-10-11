@@ -38,7 +38,7 @@ async def on_add_black_list(event):
         sql.add_to_blacklist(event.chat_id, trigger.lower())
     await edit_or_reply(
         event,
-        "مـضاف {} الـى القائمه السـوداء تـم حظـر الكـلمة 𖠕".format(
+        "مـضاف {} الـى القائمه السـوداء تـم حظـر الكـلمة ⇜ ⌯".format(
             len(to_blacklist)
         ),
     )
@@ -59,7 +59,7 @@ async def on_delete_blacklist(event):
     )
 
     await edit_or_reply(
-        event, f"تـم حـذف الكـلمة {successful} / {len(to_unblacklist)} : مـن القائـمة السـوداء 𖠕"
+        event, f"تـم حـذف الكـلمة {successful} / {len(to_unblacklist)} : مـن القائـمة السـوداء ⇜ ⌯"
     )
 
 
@@ -72,7 +72,7 @@ async def on_view_blacklist(event):
         for trigger in all_blacklisted:
             OUT_STR += f"👉 {trigger} \n"
     else:
-        OUT_STR = "لاتـوجد قـائمة سـوداء حاليـا لأضـافه كلـمه الى القائمه استعمل أمر 𖠕 `.addblacklist`"
+        OUT_STR = "لاتـوجد قـائمة سـوداء حاليـا لأضـافه كلـمه الى القائمه استعمل أمر ⇜ ⌯ `.addblacklist`"
     if len(OUT_STR) > Config.MAX_MESSAGE_SIZE_LIMIT:
         with io.BytesIO(str.encode(OUT_STR)) as out_file:
             out_file.name = "blacklist.text"
@@ -81,7 +81,7 @@ async def on_view_blacklist(event):
                 out_file,
                 force_document=True,
                 allow_cache=False,
-                caption="القوائم السوداء في الدردشة الحالية 𖠕",
+                caption="القوائم السوداء في الدردشة الحالية ⇜ ⌯",
                 reply_to=event,
             )
             await event.delete()
