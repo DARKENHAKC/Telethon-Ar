@@ -45,7 +45,7 @@ async def itachi(event):
         emoji = "𖠕"
     if not char_is_emoji(emoji):
         arg = args
-        emoji = "𖠕"
+        emoji = "⇜ ⌯"
     result = ""
     for a in arg:
         a = a.lower()
