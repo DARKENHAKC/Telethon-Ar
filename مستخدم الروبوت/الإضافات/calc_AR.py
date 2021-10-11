@@ -1,4 +1,4 @@
-# credits to @klanr
+# credits to @DARKEN
 import io
 import sys
 import traceback
@@ -31,7 +31,7 @@ async def _(car):
     elif stdout:
         evaluation = stdout
     else:
-        evaluation = "آسف ، لا يمكنني العثور على نتيجة للمعادلة المحددة 𖠕"
+        evaluation = "آسف ، لا يمكنني العثور على نتيجة للمعادلة المحددة ⇜ ⌯"
     final_output = "**معادلة**: `{}` \n\n **الحـل**: \n`{}` \n".format(
         cmd, evaluation
     )
