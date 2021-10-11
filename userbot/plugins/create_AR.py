@@ -15,7 +15,7 @@ async def _(event):
         descript = "قنـاة اختبار"
     else:
         descript = "This is a Test Group created using catuserbot"
-    event = await edit_or_reply(event, "جـاري الصنع 𖠕......")
+    event = await edit_or_reply(event, "جـاري الصنع ⇜ ⌯......")
     if type_of_group == "b":
         try:
             result = await event.client(
