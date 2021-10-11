@@ -30,7 +30,7 @@ async def gps(event):
         )
         await event.delete()
     else:
-        await event.edit("عـذرا لـم أجـد المـكان المـحدد 𖠕")
+        await event.edit("عـذرا لـم أجـد المـكان المـحدد ⇜ ⌯")
 
 
 @bot.on(sudo_cmd(pattern="gps ?(.*)", allow_sudo=True))
@@ -43,9 +43,9 @@ async def gps(event):
     input_str = event.pattern_match.group(1)
 
     if not input_str:
-        return await event.reply("ماذا يجب أن أجد أعطني الموقع. 𖠕")
+        return await event.reply("ماذا يجب أن أجد أعطني الموقع. ⇜ ⌯")
 
-    cat = await event.reply("تـم العـثور عـلى 𖠕")
+    cat = await event.reply("تـم العـثور عـلى ⇜ ⌯")
 
     geolocator = Nominatim(user_agent="catuserbot")
     geoloc = geolocator.geocode(input_str)
@@ -58,7 +58,7 @@ async def gps(event):
         )
         await cat.delete()
     else:
-        await cat.edit("عـذرا لـم أجـد 𖠕")
+        await cat.edit("عـذرا لـم أجـد ⇜ ⌯")
 
 
 CMD_HELP.update(
