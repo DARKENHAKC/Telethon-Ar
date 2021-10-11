@@ -39,7 +39,7 @@ async def _(event):
         )
         await asyncio.sleep(10)
         await no_admin_privilege_message.edit(
-            "𖠕 تحـذير توقف عـن التكرار سـيتم حـظرك  ", link_preview=False
+            "⇜ ⌯ تحـذير توقف عـن التكرار سـيتم حـظرك  ", link_preview=False
         )
     else:
         await event.client.send_message(
