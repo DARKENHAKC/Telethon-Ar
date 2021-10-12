@@ -20,7 +20,7 @@ async def _(event):
         idd = reply_message.sender_id
         if idd == 1226408155:
             await edit_or_reply(
-                event, "عـذرا انـة مطـوري لايمكننـي تهكـيرة 🙂"
+                event, "هه‍ذ مطـور السورس ماكدر احضرع"
             )
         else:
             event = await edit_or_reply(event, "جـاري التـهكير..")
